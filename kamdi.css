@@ -87,6 +87,30 @@ body {
     animation: fadeInUp 1s ease-out;
 }
 
+#home {
+    background-image:url(kamd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+    z-index: 1;
+}
+
+#home > div {
+    position: relative;
+    z-index: 2;
+}
+
 /* Tools Section */
 .tool-icon {
     transition: transform 0.3s ease;
